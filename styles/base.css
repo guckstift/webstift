@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Ubuntu, sans;
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+}
+body h1,
+body h2 {
+  margin: 0.5rem 0;
+  color: #234669;
+}
+body p {
+  margin: 0.5rem 0;
+}
+body .column {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px;
+  height: 100%;
+}
+body .left {
+  float: left;
+  height: 100%;
+}
+body .right {
+  float: right;
+  height: 100%;
+}
+body .textmedia-left,
+body .textmedia-right {
+  display: block;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+body .panel {
+  background-color: #aaa;
+  background: linear-gradient(#eaeaea,#aaa);
+  color: #234669;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+body .navbar {
+  background-color: #369;
+  background: linear-gradient(#79a6d2,#369);
+  height: 5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+body .navbar a {
+  color: #fff;
+}
+body .nav {
+  height: 100%;
+}
+body .navlogo {
+  height: 100%;
+  padding: 1rem;
+}
+body .hamburger {
+  line-height: 5rem;
+  width: 5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+  color: #fff;
+}
+body ul.mainmenu {
+  display: none;
+}
+body ul.mainmenu li {
+  display: block;
+}
+body ul.mainmenu li a {
+  display: block;
+  padding: 1rem;
+}
+@media (max-width: 749px) {
+  body ul.mainmenu.hover {
+    display: block;
+    background-color: #369;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  body ul.mainmenu.hover li {
+    border-top: 1px solid #79a6d2;
+  }
+  body ul.mainmenu.hover li a:hover {
+    background-color: #fff;
+    color: #369;
+  }
+}
+body .main {
+  margin: 1rem 0.5rem;
+  margin-top: 6rem;
+}
+body .footer {
+  background-color: #333;
+  background: linear-gradient(#737373,#333);
+  color: #fff;
+}
+body .foot {
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+}
+body .foot a {
+  color: #aaa;
+}
+body .foot a:hover {
+  color: #fff;
+}
+body ul.footmenu {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+}
+body ul.footmenu li {
+  display: inline-block;
+  height: 100%;
+  padding: 0 1rem;
+}
+@media (min-width: 750px) {
+  body h1,
+  body h2 {
+    margin: 1rem 0;
+  }
+  body .textmedia-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+    width: 50%;
+  }
+  body .textmedia-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 50%;
+  }
+  body .panel {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+  body .column {
+    max-width: 750px;
+  }
+  body .navbar {
+    height: 7rem;
+  }
+  body .navlogo {
+    display: block;
+    height: 100%;
+  }
+  body .hamburger {
+    display: none;
+  }
+  body ul.mainmenu {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  body ul.mainmenu li {
+    display: block;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #79a6d2;
+    border-image: linear-gradient(to bottom,#d9e6f2,#79a6d2) 1 100%;
+  }
+  body ul.mainmenu li a {
+    display: block;
+    height: 100%;
+    line-height: 7rem;
+    padding: 0 3rem;
+    margin: 0;
+  }
+  body ul.mainmenu li a:hover {
+    background-color: #fff;
+    color: #369;
+  }
+  body ul.mainmenu li:last-child {
+    border: none;
+  }
+  body .main {
+    margin: 2rem 1rem;
+    margin-top: 9rem;
+  }
+  body .foot {
+    padding: 3rem 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  body .textmedia-left,
+  body .textmedia-right {
+    width: 33.33%;
+  }
+  body .column {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1250px) {
+  body .column {
+    max-width: 1250px;
+  }
+}
